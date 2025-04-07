@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/CSS/Doc.css" />
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <title>CodeOn|Documentation</title>
+  </head>
+  <body>
+    <header>
+      <nav class="main-nav">
+        <div class="nav-container">
+          <a href="index.html" class="logo"><h4>CodeOn</h4></a>
+          <ul class="nav-menu">
+            <li><a href="/Html/features.html">Features</a></li>
+            <li><a href="/Html/Doc.html">Docs</a></li>
+            <li><a href="/Html/Pricing.html">Pricing</a></li>
+            <li><a href="/Html/about.html">About</a></li>
+            <li><a href="/Html/login.html">Login</a></li>
+            <button class="sign-up-btn"><a href="#">Sign Up</a></button>
+          </ul>
+          <button class="menu-btn"></button>
+        </div>
+      </nav>
+    </header>
+
+    <section>
+      <div class="doc-container">
+        <div class="doc-head">
+          <h1>Documentation</h1>
+          <p>Everything you need to know about CodeOn</p>
+        </div>
+        <div class="doc-main">
+          <div class="doc-sidebar">
+            <ul>
+              <li>
+                <a href="#getting-started">Getting Started</a>
+                <ul>
+                  <li><a href="#overview">Quick Start Guide</a></li>
+                  <li><a href="#requirements">Installation</a></li>
+                  <li><a href="#setup">Basic Concepts</a></li>
+                  <li><a href="#examples">First Project</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#installation">Core Features</a>
+                <ul>
+                  <li><a href="#download">Code Editor</a></li>
+                  <li><a href="#install-steps">Terminal Usage</a></li>
+                  <li><a href="#troubleshooting">Git Integration</a></li>
+                  <li><a href="#uninstall">Debugging</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#features">Advanced Topics</a>
+                <ul>
+                  <li><a href="#feature-1">Custom Extensions</a></li>
+                  <li><a href="#feature-2">API Reference</a></li>
+                  <li><a href="#feature-3">Performance Tips</a></li>
+                  <li><a href="#feature-4">Security</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#faq">FAQ</a>
+                <ul>
+                  <li><a href="#general-questions">General Questions</a></li>
+                  <li><a href="#technical-questions">Technical Questions</a></li>
+                  <li><a href="#billing-questions">Billing Questions</a></li>
+                  <li><a href="#other-questions">Other Questions</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="doc-content-container">
+            <h2>Quick Start Guide</h2>
+            <p>Get up and running with CodeOn in minutes. Follow our simple setup process and start coding right away.</p>
+            <div class="doc-boxes">
+              <div class="doc-box">
+                <div class="icon-space">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-text-icon lucide-file-text"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg>
+                </div>
+                <h3>Documentation</h3>
+              </div>
+              <div class="doc-box">
+                <div class="icon-space">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-video-icon lucide-video"><path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5"/><rect x="2" y="6" width="14" height="12" rx="2"/></svg>
+                </div>
+                <h3>Video Tutorials</h3>
+              </div>
+              <div class="doc-box">
+                <div class="icon-space">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-book-icon lucide-book"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20"/></svg>
+                </div>
+                <h3>API Reference</h3>
+              </div>
+              <div class="doc-box">
+                <div class="icon-space">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-square-icon lucide-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                </div>
+                <h3>Community</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p class="f-tag">&copy; CodeOn. All rights reserved.</p>
+    </footer>
+    <script>
+      lucide.createIcons();
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        lucide.createIcons();
+
+        // Remove Lucide's inline width & height
+        document.querySelectorAll(".custom-icon svg").forEach(icon => {
+          icon.removeAttribute("width");
+          icon.removeAttribute("height");
+        });
+      });
+    </script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="/JS/script.js"></script>
+  </body>
+</html>
