@@ -1,69 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/CSS/login.css" />
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
-      rel="stylesheet"
-    />
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-    <title>CodeOn|Login</title>
-  </head>
-  <body>
-    <header>
-      <nav class="main-nav">
-        <div class="nav-container">
-          <a href="Index.html" class="logo"><h4>CodeOn</h4></a>
-          <ul class="nav-menu">
-            <li><a href="/Html/features.html">Features</a></li>
-            <li><a href="/Html/Doc.html">Docs</a></li>
-            <li><a href="/Html/Pricing.html">Pricing</a></li>
-            <li><a href="/Html/about.html">About</a></li>
-            <li><a href="/Html/login.html">Login</a></li>
-            <button class="sign-up-btn"><a href="#">Sign Up</a></button>
-          </ul>
-          <button class="menu-btn"></button>
-        </div>
-      </nav>
-    </header>
-    <main>
-      <div class="login-container">
-        <div class="login-form">
-          <h1>Login</h1>
-          <form action="/Html/Index.html" method="POST">
-            <div class="input-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" required />
-            </div>
-            <div class="input-group">
-              <label for="password">Password</label>
-              <input type="password" id="password" name="password" required />
-            </div>
-            <button type="submit" class="login-btn">Login</button>
-          </form>
-          <p>Don't have an account? <a href="#">Sign Up</a></p>
-        </div>
+<head>
+  <meta charset="UTF-8">
+  <title>CodeOn|Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/CSS/login.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  <header>
+    <nav class="main-nav">
+      <div class="nav-container">
+        <a href="Index.html" class="logo"><h4>CodeOn</h4></a>
+        <ul class="nav-menu">
+          <li><a href="/Html/features.html">Features</a></li>
+          <li><a href="/Html/Doc.html">Docs</a></li>
+          <li><a href="/Html/Pricing.html">Pricing</a></li>
+          <li><a href="/Html/about.html">About</a></li>
+          <li><a href="/Html/login.html">Login</a></li>
+          <button class="sign-up-btn"><a href="/Html/signup.html">Sign Up</a></button>
+        </ul>
+        <button class="menu-btn"></button>
       </div>
-    <script>
-        lucide.createIcons();
-      </script>
-      <script>
-        document.addEventListener("DOMContentLoaded", function () {
-          lucide.createIcons();
-  
-          // Remove Lucide's inline width & height
-          document.querySelectorAll(".custom-icon svg").forEach(icon => {
-            icon.removeAttribute("width");
-            icon.removeAttribute("height");
-          });
-        });
-      </script>
-      <script src="https://unpkg.com/lucide@latest"></script>
-      <script src="/JS/script.js"></script>
-    </body>
-  </html>
+    </nav>
+  </header>
+  <section class="form-section">
+    <div class="form-head">
+      <h2>Welcome Back</h2>
+      <p>Sign in to your account</p>
+    </div>
+  <div class="box">
+    <form>
+      <label>Email</label>
+      <div class="input-wrap">
+        <i class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail-icon lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></i>
+        <input type="email" placeholder="Enter your email" required>
+      </div>
+      <label>Password</label>
+      <div class="input-wrap">
+        <i class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lock-icon lucide-lock"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></i>
+        <input type="text" id="password" placeholder="Enter your password"  required>
+        <i class="fas fa-eye toggle" id="togglePassword"></i>
+      </div>
+      <div class="options">
+        <label class="checkbox"><input type="checkbox" required> Remember me</label>
+        <a href="#">Forgot password?</a>
+      </div>
+      <button type="submit">Sign In</button>
+      <p class="signup">Don't have an account? <a href="#">Sign up</a></p>
+    </form>
+  </div>
+</section>
+<footer>
+  <p class="f-tag">&copy; CodeOn. All rights reserved.</p>
+</footer>
+<script src="/JS/script.js"></script>
+<script>
+  const toggle = document.getElementById('togglePassword');
+  const password = document.getElementById('password');
+  toggle.addEventListener('click', () => {
+    const type = password.type === 'password' ? 'text' : 'password';
+    password.type = type;
+    toggle.classList.toggle('fa-eye-slash');
+  });
+</script>
+</body>
+</html>

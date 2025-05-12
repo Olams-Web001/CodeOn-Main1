@@ -47,6 +47,7 @@ a:hover
 {
     color: var(--primary-color);
     font-size: 40px;
+    text-decoration: none !important;
 }
 nav
 {
